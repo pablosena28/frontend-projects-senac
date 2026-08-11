@@ -6,8 +6,8 @@ Este arquivo acompanha o status dos projetos desenvolvidos durante o curso de Pr
 
 | Projeto | Descrição | Tecnologias | Status |
 |---|---|---|---|
-| SpeedKicks | E-commerce responsivo com carrinho, cadastro e checkout demonstrativo | HTML, CSS, JavaScript, LocalStorage | Repositório individual em preparação |
-| DJ Cleiton Rasta | Landing page responsiva para artista com player do Spotify e identidade visual própria | HTML, CSS, JavaScript | Repositório individual em preparação |
+| [DJ Cleiton Rasta](projects/dj-cleiton-rasta/) | Landing page responsiva para artista com player do Spotify e identidade visual própria | HTML, CSS, JavaScript | Publicado no portfólio |
+| SpeedKicks | E-commerce responsivo com carrinho, cadastro e checkout demonstrativo | HTML, CSS, JavaScript, LocalStorage | Em preparação |
 
 ## Critérios para inclusão no portfólio
 
@@ -19,18 +19,19 @@ Um projeto passa a integrar este portfólio quando possui:
 - layout responsivo;
 - descrição clara do problema ou objetivo;
 - tecnologias utilizadas documentadas;
-- screenshot ou demonstração publicada, quando aplicável.
+- demonstração ou material visual, quando aplicável.
 
-## Padrão recomendado para novos projetos
+## Estrutura recomendada
 
 ```text
-nome-do-projeto/
-├── assets/
-├── index.html
-├── styles.css
-├── script.js
-├── README.md
-└── .gitignore
+projects/
+└── nome-do-projeto/
+    ├── assets/
+    ├── index.html
+    ├── styles.css
+    ├── script.js
+    ├── README.md
+    └── .gitignore
 ```
 
-Cada projeto relevante deve permanecer em seu próprio repositório. Este repositório central serve apenas como índice e apresentação geral do conjunto de trabalhos.
+Os projetos ficam organizados em subpastas dentro deste repositório central. Aplicações que ganharem maior escopo também podem ser promovidas para repositórios individuais posteriormente.
