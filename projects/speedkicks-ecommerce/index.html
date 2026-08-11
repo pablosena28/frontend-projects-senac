@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="SpeedKicks: loja demonstrativa de tênis com carrinho funcional e cadastro local."
+  >
+  <title>SpeedKicks | Loja Esportiva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a class="brand" href="#top" aria-label="Página inicial da SpeedKicks">
+        <span class="brand-icon" aria-hidden="true">👟</span>
+        <span>SpeedKicks</span>
+      </a>
+
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Navegação principal">
+        <a href="#lancamentos">Lançamentos</a>
+        <a href="#beneficios">Diferenciais</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="accountButton" class="header-button" type="button">
+          <span aria-hidden="true">👤</span>
+          <span id="accountButtonText">Cadastro</span>
+        </button>
+
+        <button
+          id="cartButton"
+          class="header-button cart-button"
+          type="button"
+          aria-label="Abrir carrinho de compras"
+          aria-controls="cartDrawer"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true">🛒</span>
+          <span class="desktop-label">Carrinho</span>
+          <span id="cartCount" class="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">Coleção 2026 • Performance urbana</span>
+          <h1>Conforto, tecnologia e estilo em cada passo.</h1>
+          <p>
+            Escolha o tênis ideal para corrida, treino ou rotina. O carrinho
+            atualiza imediatamente e permanece salvo no navegador.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#lancamentos">Ver lançamentos</a>
+            <button class="button button-secondary" type="button" data-open-cart>
+              Ver carrinho
+            </button>
+          </div>
+
+          <div class="hero-stats" aria-label="Destaques da loja">
+            <div><strong>3</strong><span>modelos em destaque</span></div>
+            <div><strong>100%</strong><span>carrinho funcional</span></div>
+            <div><strong>Local</strong><span>cadastro demonstrativo</span></div>
+          </div>
+        </div>
+
+        <div class="hero-showcase" aria-label="Tênis em destaque">
+          <div class="showcase-card">
+            <span class="product-badge">Mais vendido</span>
+            <img
+              src="assets/speedrunner-pro.jpg"
+              alt="Tênis SpeedRunner Pro preto e branco"
+              loading="eager"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lancamentos" class="container products-section">
+      <div class="section-heading">
+        <span class="eyebrow">Lançamentos</span>
+        <h2>Modelos em destaque</h2>
+        <p>
+          Os produtos são renderizados a partir de um catálogo único no JavaScript,
+          evitando dados duplicados entre a vitrine e o carrinho.
+        </p>
+      </div>
+
+      <div id="productGrid" class="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="beneficios" class="benefits-section">
+      <div class="container">
+        <div class="section-heading light">
+          <span class="eyebrow">Diferenciais</span>
+          <h2>Experiência de compra consistente</h2>
+          <p>
+            Adição, remoção, quantidade, total, persistência local e cadastro em
+            uma interface responsiva.
+          </p>
+        </div>
+
+        <div class="benefit-grid">
+          <article>
+            <span aria-hidden="true">⚡</span>
+            <h3>Atualização imediata</h3>
+            <p>O produto aparece no carrinho assim que o botão é acionado.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">💾</span>
+            <h3>Persistência local</h3>
+            <p>O carrinho e o perfil permanecem disponíveis após recarregar a página.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">🔒</span>
+            <h3>Cadastro demonstrativo</h3>
+            <p>A senha é validada, mas não é armazenada no navegador.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="eyebrow">Atendimento</span>
+          <h2>Fale conosco</h2>
+          <p>
+            Use o formulário para dúvidas sobre produtos, tamanhos, entregas ou trocas.
+          </p>
+          <div class="contact-note">
+            <strong>Resposta estimada:</strong> até 24 horas úteis.
+          </div>
+        </div>
+
+        <form id="contactForm" class="form-card" novalidate>
+          <label for="contactName">Nome completo *</label>
+          <input id="contactName" name="name" type="text" required>
+
+          <label for="contactEmail">E-mail *</label>
+          <input id="contactEmail" name="email" type="email" required>
+
+          <label for="contactSubject">Assunto *</label>
+          <select id="contactSubject" name="subject" required>
+            <option value="" selected disabled>Selecione um assunto</option>
+            <option value="produto">Dúvida sobre produto</option>
+            <option value="entrega">Entrega</option>
+            <option value="troca">Troca ou devolução</option>
+            <option value="outro">Outro</option>
+          </select>
+
+          <label for="contactMessage">Mensagem *</label>
+          <textarea id="contactMessage" name="message" rows="5" required></textarea>
+
+          <button class="form-submit" type="submit">Enviar mensagem</button>
+          <p id="contactFeedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sobreposição e painel lateral do carrinho. -->
+  <div id="cartOverlay" class="drawer-overlay" aria-hidden="true"></div>
+
+  <aside
+    id="cartDrawer"
+    class="cart-drawer"
+    aria-hidden="true"
+    aria-labelledby="cartTitle"
+  >
+    <div class="drawer-header">
+      <div>
+        <span class="drawer-kicker">Sua seleção</span>
+        <h2 id="cartTitle">Carrinho</h2>
+      </div>
+      <button id="closeCartButton" class="icon-button" type="button" aria-label="Fechar carrinho">×</button>
+    </div>
+
+    <div id="emptyCart" class="empty-state">
+      <span aria-hidden="true">🛍️</span>
+      <h3>Seu carrinho está vazio</h3>
+      <p>Adicione um produto para visualizar os itens e o valor total.</p>
+      <button class="secondary-action" type="button" data-close-cart>Continuar comprando</button>
+    </div>
+
+    <div id="cartContent" class="cart-content" hidden>
+      <div id="cartItems" class="cart-items" aria-live="polite"></div>
+
+      <div class="cart-summary">
+        <div>
+          <span>Itens</span>
+          <strong id="cartQuantitySummary">0</strong>
+        </div>
+        <div class="cart-total-row">
+          <span>Total</span>
+          <strong id="cartTotal">R$ 0,00</strong>
+        </div>
+
+        <button id="checkoutButton" class="primary-action" type="button">
+          Finalizar compra
+        </button>
+        <button id="clearCartButton" class="danger-action" type="button">
+          Esvaziar carrinho
+        </button>
+        <p class="small-note">Checkout demonstrativo. Nenhum pagamento real será processado.</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Modal de cadastro e visualização da conta. -->
+  <dialog id="accountDialog" class="modal">
+    <div class="modal-header">
+      <div>
+        <span class="drawer-kicker">Área do cliente</span>
+        <h2 id="accountTitle">Cadastro</h2>
+      </div>
+      <button id="closeAccountButton" class="icon-button" type="button" aria-label="Fechar cadastro">×</button>
+    </div>
+
+    <form id="registerForm" class="modal-form" novalidate>
+      <p class="modal-intro">
+        Crie um cadastro local para preencher seus dados com mais rapidez.
+      </p>
+
+      <label for="registerEmail">E-mail *</label>
+      <input id="registerEmail" name="email" type="email" autocomplete="email" required>
+
+      <label for="registerPassword">Senha *</label>
+      <input
+        id="registerPassword"
+        name="password"
+        type="password"
+        autocomplete="new-password"
+        minlength="8"
+        aria-describedby="passwordHint"
+        required
+      >
+      <small id="passwordHint">Use pelo menos 8 caracteres, incluindo uma letra e um número.</small>
+
+      <label for="registerPasswordConfirm">Confirmar senha *</label>
+      <input
+        id="registerPasswordConfirm"
+        name="passwordConfirm"
+        type="password"
+        autocomplete="new-password"
+        minlength="8"
+        required
+      >
+
+      <label for="registerCep">CEP *</label>
+      <input
+        id="registerCep"
+        name="cep"
+        type="text"
+        inputmode="numeric"
+        autocomplete="postal-code"
+        maxlength="9"
+        placeholder="00000-000"
+        required
+      >
+      <p id="cepFeedback" class="field-feedback" aria-live="polite"></p>
+
+      <button class="form-submit" type="submit">Criar cadastro</button>
+      <p id="registerFeedback" class="form-feedback error" aria-live="polite"></p>
+      <p class="security-note">
+        Projeto front-end: a senha é validada e descartada. Um sistema real exige backend,
+        banco de dados e autenticação segura.
+      </p>
+    </form>
+
+    <section id="accountProfile" class="account-profile" hidden>
+      <div class="profile-avatar" aria-hidden="true">👤</div>
+      <h3>Cadastro ativo</h3>
+      <dl>
+        <div>
+          <dt>E-mail</dt>
+          <dd id="profileEmail"></dd>
+        </div>
+        <div>
+          <dt>CEP</dt>
+          <dd id="profileCep"></dd>
+        </div>
+        <div>
+          <dt>Endereço</dt>
+          <dd id="profileAddress">Não informado</dd>
+        </div>
+      </dl>
+      <button id="logoutButton" class="danger-action" type="button">Sair da conta local</button>
+    </section>
+  </dialog>
+
+  <!-- Checkout simples para demonstrar o fluxo de compra. -->
+  <dialog id="checkoutDialog" class="modal">
+    <div class="modal-header">
+      <div>
+        <span class="drawer-kicker">Etapa final</span>
+        <h2>Finalizar pedido</h2>
+      </div>
+      <button id="closeCheckoutButton" class="icon-button" type="button" aria-label="Fechar checkout">×</button>
+    </div>
+
+    <form id="checkoutForm" class="modal-form" novalidate>
+      <div class="checkout-total-box">
+        <span>Total do pedido</span>
+        <strong id="checkoutTotal">R$ 0,00</strong>
+      </div>
+
+      <label for="checkoutEmail">E-mail *</label>
+      <input id="checkoutEmail" name="email" type="email" autocomplete="email" required>
+
+      <label for="checkoutCep">CEP *</label>
+      <input
+        id="checkoutCep"
+        name="cep"
+        type="text"
+        inputmode="numeric"
+        autocomplete="postal-code"
+        maxlength="9"
+        required
+      >
+
+      <label for="checkoutPayment">Forma de pagamento *</label>
+      <select id="checkoutPayment" name="payment" required>
+        <option value="" selected disabled>Selecione</option>
+        <option value="pix">Pix</option>
+        <option value="credit">Cartão de crédito</option>
+        <option value="boleto">Boleto</option>
+      </select>
+
+      <button class="form-submit" type="submit">Confirmar pedido demonstrativo</button>
+      <p id="checkoutFeedback" class="form-feedback error" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 SpeedKicks — Projeto demonstrativo</p>
+      <a href="#top">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
