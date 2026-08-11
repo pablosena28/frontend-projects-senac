@@ -48,25 +48,28 @@ Landing page responsiva voltada à apresentação de um artista, trabalhando ide
 
 ---
 
-### 2. SpeedKicks — E-commerce Front-End
+### 2. SpeedKicks — E-commerce de Tênis
 
-Aplicação de loja virtual responsiva desenvolvida com HTML, CSS e JavaScript puro.
+Aplicação de loja virtual responsiva desenvolvida com HTML, CSS e JavaScript puro, com foco em interação, gerenciamento de estado e experiência de compra no navegador.
 
 **Principais recursos:**
 
-- catálogo de produtos;
+- catálogo dinâmico de produtos;
 - carrinho lateral funcional;
-- controle de quantidades;
-- remoção de produtos sem quebra de layout;
-- cálculo automático de subtotal e total;
+- controle de quantidades e remoção de itens;
+- cálculo automático do total;
 - persistência do carrinho com `localStorage`;
-- cadastro com e-mail, senha e CEP;
+- cadastro demonstrativo com e-mail, senha e CEP;
+- consulta de endereço via ViaCEP;
+- checkout demonstrativo;
 - validação de formulários;
-- checkout demonstrativo.
+- layout responsivo e recursos de acessibilidade.
 
-**Tecnologias:** `HTML5` `CSS3` `JavaScript` `LocalStorage`
+**Tecnologias:** `HTML5` `CSS3` `JavaScript` `LocalStorage` `Fetch API` `ViaCEP`
 
-**Status:** em preparação para inclusão no portfólio.
+**Status:** publicado neste portfólio.
+
+**Código:** [projects/speedkicks-ecommerce](projects/speedkicks-ecommerce/)
 
 ## Estrutura do repositório
 
@@ -75,14 +78,21 @@ frontend-projects-senac/
 ├── README.md
 ├── PROJECTS.md
 └── projects/
-    └── dj-cleiton-rasta/
+    ├── dj-cleiton-rasta/
+    │   ├── assets/
+    │   ├── index.html
+    │   ├── styles.css
+    │   ├── script.js
+    │   └── README.md
+    └── speedkicks-ecommerce/
         ├── assets/
-        │   └── reggae-cover.svg
+        │   ├── airboost-max.jpg
+        │   ├── flexfit-ultra.jpg
+        │   └── speedrunner-pro.jpg
         ├── index.html
         ├── styles.css
         ├── script.js
         ├── README.md
-        ├── LICENSE
         └── .gitignore
 ```
 
@@ -104,7 +114,7 @@ chore: realiza ajustes de configuração
 ## Próximos passos
 
 - [x] Adicionar o site DJ Cleiton Rasta ao portfólio
-- [ ] Adicionar o SpeedKicks ao portfólio
+- [x] Adicionar o SpeedKicks ao portfólio
 - [ ] Ativar GitHub Pages para demonstrações publicáveis
 - [ ] Adicionar screenshots das aplicações
 - [ ] Incluir novos projetos desenvolvidos durante o curso
