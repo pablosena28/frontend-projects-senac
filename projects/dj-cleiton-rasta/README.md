@@ -1,13 +1,15 @@
-# DJ Cleiton Rasta — site de artista
+# DJ Cleiton Rasta — Site de Artista
 
-Landing page responsiva para apresentação de um artista ligado ao universo do reggae, com biografia, faixa incorporada do Spotify e links para plataformas externas.
+Landing page responsiva desenvolvida durante a formação em **Programação Front-End no SENAC**, voltada à apresentação de um artista ligado ao universo do reggae.
+
+O projeto explora identidade visual, responsividade, HTML semântico, interações simples com JavaScript e integração de conteúdo multimídia por meio do Spotify.
 
 ## Demonstração
 
-Após publicar no GitHub Pages, adicione aqui o endereço do projeto:
+Após ativar o GitHub Pages no repositório central, o projeto poderá ser acessado em:
 
 ```text
-https://SEU-USUARIO.github.io/dj-cleiton-rasta/
+https://pablosena28.github.io/frontend-projects-senac/projects/dj-cleiton-rasta/
 ```
 
 ## Funcionalidades
@@ -46,24 +48,17 @@ dj-cleiton-rasta/
 
 A paleta utiliza verde profundo como base, dourado como destaque e terracota de forma pontual. A combinação remete ao universo reggae sem depender de cores excessivamente saturadas.
 
-O projeto evita bibliotecas externas para manter carregamento rápido, manutenção simples e publicação direta no GitHub Pages.
+O projeto evita bibliotecas externas para manter carregamento rápido, manutenção simples e publicação direta como aplicação estática.
 
-## Como executar
+## Como executar localmente
 
-Não há dependências ou etapa de compilação.
+Não há dependências nem etapa de compilação.
 
-1. Baixe ou clone o repositório.
-2. Abra o arquivo `index.html` no navegador.
+1. Clone o repositório `frontend-projects-senac`.
+2. Acesse a pasta `projects/dj-cleiton-rasta`.
+3. Abra o arquivo `index.html` no navegador.
 
-Para desenvolvimento local, também é possível usar a extensão **Live Server** no Visual Studio Code.
-
-## Publicação no GitHub Pages
-
-1. Crie um repositório público.
-2. Envie todos os arquivos mantendo a pasta `assets`.
-3. Acesse **Settings > Pages**.
-4. Em **Source**, selecione a branch `main` e a pasta `/root`.
-5. Salve e aguarde a publicação.
+Também é possível utilizar a extensão **Live Server** no Visual Studio Code.
 
 ## Melhorias futuras
 
@@ -76,3 +71,5 @@ Para desenvolvimento local, também é possível usar a extensão **Live Server*
 ## Autor
 
 Projeto desenvolvido por **Pablo Sena** para portfólio de desenvolvimento front-end.
+
+[Voltar ao portfólio principal](../../README.md)
