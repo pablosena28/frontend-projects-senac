@@ -7,7 +7,7 @@ Este arquivo acompanha o status dos projetos desenvolvidos durante o curso de Pr
 | Projeto | Descrição | Tecnologias | Status |
 |---|---|---|---|
 | [DJ Cleiton Rasta](projects/dj-cleiton-rasta/) | Landing page responsiva para artista com player do Spotify e identidade visual própria | HTML, CSS, JavaScript | Publicado no portfólio |
-| SpeedKicks | E-commerce responsivo com carrinho, cadastro e checkout demonstrativo | HTML, CSS, JavaScript, LocalStorage | Em preparação |
+| [SpeedKicks](projects/speedkicks-ecommerce/) | E-commerce responsivo de tênis com carrinho, cadastro, consulta de CEP e checkout demonstrativo | HTML, CSS, JavaScript, LocalStorage, ViaCEP | Publicado no portfólio |
 
 ## Critérios para inclusão no portfólio
 
