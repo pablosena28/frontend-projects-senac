@@ -111,14 +111,6 @@ refactor: reorganiza código sem alterar comportamento
 chore: realiza ajustes de configuração
 ```
 
-## Próximos passos
-
-- [x] Adicionar o site DJ Cleiton Rasta ao portfólio
-- [x] Adicionar o SpeedKicks ao portfólio
-- [ ] Ativar GitHub Pages para demonstrações publicáveis
-- [ ] Adicionar screenshots das aplicações
-- [ ] Incluir novos projetos desenvolvidos durante o curso
-
 ## Autor
 
 **Pablo Sena**
