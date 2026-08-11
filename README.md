@@ -1,8 +1,8 @@
 # Front-End Projects — SENAC
 
-Portfólio central dos projetos desenvolvidos durante minha formação em **Programação Front-End no SENAC**.
+Portfólio dos projetos desenvolvidos durante minha formação em **Programação Front-End no SENAC**.
 
-Este repositório funciona como um índice dos trabalhos mais relevantes do curso. Cada projeto será mantido em um **repositório próprio**, preservando seu histórico de desenvolvimento, documentação e evolução técnica.
+Este repositório reúne aplicações selecionadas do curso em uma estrutura organizada por projetos. Cada pasta possui código-fonte e documentação próprios, permitindo acompanhar a evolução prática em desenvolvimento web.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
@@ -26,7 +26,29 @@ O objetivo deste portfólio é apresentar minha evolução prática em desenvolv
 
 ## Projetos em destaque
 
-### 1. SpeedKicks — E-commerce Front-End
+### 1. DJ Cleiton Rasta — Artist Landing Page
+
+Landing page responsiva voltada à apresentação de um artista, trabalhando identidade visual, conteúdo multimídia e navegação em diferentes dispositivos.
+
+**Principais recursos:**
+
+- layout responsivo;
+- identidade visual inspirada no universo reggae;
+- player incorporado do Spotify;
+- links externos para perfil, letras e clipes;
+- menu mobile;
+- navegação por teclado;
+- HTML semântico e cuidados básicos de acessibilidade.
+
+**Tecnologias:** `HTML5` `CSS3` `JavaScript`
+
+**Status:** publicado neste portfólio.
+
+**Código:** [projects/dj-cleiton-rasta](projects/dj-cleiton-rasta/)
+
+---
+
+### 2. SpeedKicks — E-commerce Front-End
 
 Aplicação de loja virtual responsiva desenvolvida com HTML, CSS e JavaScript puro.
 
@@ -40,57 +62,35 @@ Aplicação de loja virtual responsiva desenvolvida com HTML, CSS e JavaScript p
 - persistência do carrinho com `localStorage`;
 - cadastro com e-mail, senha e CEP;
 - validação de formulários;
-- checkout demonstrativo;
-- integração de CEP preparada para consumo de API.
+- checkout demonstrativo.
 
 **Tecnologias:** `HTML5` `CSS3` `JavaScript` `LocalStorage`
 
-**Status:** repositório individual em preparação.
+**Status:** em preparação para inclusão no portfólio.
 
----
-
-### 2. DJ Cleiton Rasta — Artist Landing Page
-
-Landing page responsiva voltada à apresentação de um artista, trabalhando identidade visual, conteúdo multimídia e navegação em diferentes dispositivos.
-
-**Principais recursos:**
-
-- layout responsivo;
-- identidade visual inspirada no universo reggae;
-- fotografia e elementos gráficos otimizados para WebP;
-- player incorporado do Spotify;
-- links para conteúdos externos;
-- menu mobile;
-- navegação por teclado;
-- HTML semântico e cuidados básicos de acessibilidade.
-
-**Tecnologias:** `HTML5` `CSS3` `JavaScript` `WebP`
-
-**Status:** repositório individual em preparação.
-
-## Estratégia de organização
-
-Este repositório **não concentra todo o código-fonte dos projetos**. Ele funciona como uma página central de navegação do portfólio.
-
-A estrutura adotada é:
+## Estrutura do repositório
 
 ```text
-frontend-projects-senac
-│
-├── README.md               # visão geral do portfólio
-└── PROJECTS.md             # catálogo e status dos projetos
-
-Repositórios individuais
-├── speedkicks-ecommerce
-├── dj-cleiton-rasta
-└── futuros-projetos
+frontend-projects-senac/
+├── README.md
+├── PROJECTS.md
+└── projects/
+    └── dj-cleiton-rasta/
+        ├── assets/
+        │   └── reggae-cover.svg
+        ├── index.html
+        ├── styles.css
+        ├── script.js
+        ├── README.md
+        ├── LICENSE
+        └── .gitignore
 ```
 
-Essa organização permite que cada aplicação tenha seu próprio histórico de commits, README, demonstração e documentação técnica.
+Cada projeto possui uma pasta própria. Projetos que ganharem maior escopo também podem ser publicados posteriormente em repositórios individuais, preservando um histórico de desenvolvimento específico.
 
 ## Padrão de commits
 
-Os projetos utilizam mensagens de commit objetivas, inspiradas no padrão **Conventional Commits**:
+As mensagens de commit seguem uma organização inspirada no padrão **Conventional Commits**:
 
 ```text
 feat: adiciona nova funcionalidade
@@ -103,12 +103,11 @@ chore: realiza ajustes de configuração
 
 ## Próximos passos
 
-- [ ] Publicar o SpeedKicks em repositório próprio
-- [ ] Publicar o site DJ Cleiton Rasta em repositório próprio
-- [ ] Ativar GitHub Pages nos projetos publicáveis
+- [x] Adicionar o site DJ Cleiton Rasta ao portfólio
+- [ ] Adicionar o SpeedKicks ao portfólio
+- [ ] Ativar GitHub Pages para demonstrações publicáveis
 - [ ] Adicionar screenshots das aplicações
-- [ ] Inserir links de demonstração neste portfólio central
-- [ ] Adicionar novos projetos desenvolvidos durante o curso
+- [ ] Incluir novos projetos desenvolvidos durante o curso
 
 ## Autor
 
@@ -118,4 +117,4 @@ GitHub: [@pablosena28](https://github.com/pablosena28)
 
 ---
 
-Este repositório registra minha evolução prática durante a formação em Front-End no SENAC e será atualizado conforme novos projetos forem concluídos e publicados.
+Este repositório registra minha evolução prática durante a formação em Front-End no SENAC e será atualizado conforme novos projetos forem concluídos.
