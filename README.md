@@ -1,5 +1,4 @@
-# Front-End Projects — Bootcamp Kodie Academy
-
+# Front-End Projects — Senac
 Portfólio dos projetos desenvolvidos durante minha formação em **Programação Front-End no SENAC**.
 
 Este repositório reúne aplicações selecionadas do curso em uma estrutura organizada por projetos. Cada pasta possui código-fonte e documentação próprios, permitindo acompanhar a evolução prática em desenvolvimento web.
