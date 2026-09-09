@@ -1,4 +1,4 @@
-# Front-End Projects — SENAC
+# Front-End Projects — Bootcamp Kodie Academy
 
 Portfólio dos projetos desenvolvidos durante minha formação em **Programação Front-End no SENAC**.
 
